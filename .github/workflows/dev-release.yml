@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        target: [starwarscrashfix-standalone]
+        target: [starwars-standalone]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
