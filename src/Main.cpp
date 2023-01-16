@@ -6,8 +6,10 @@
 
 void startup_thread() {
     // Spawn a debug console
+#ifdef SPAWN_CONSOLE
     AllocConsole();
     freopen("CONOUT$", "w", stdout);
+#endif
 
     printf("[starwarscrashfix-standalone] Patching init projected shadows!\n");
 
